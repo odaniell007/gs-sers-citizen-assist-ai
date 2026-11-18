@@ -1,6 +1,6 @@
 # Citizen Assist AI — Módulo Energia (SERS)
 
-Global Solution 2026.2 · Soluções em Energias Renováveis e Sustentáveis · Ciência da Computação (1CCPZ)
+Global Solution 2026 · Soluções em Energias Renováveis e Sustentáveis · Ciência da Computação (1CCPZ)
 
 ## Integrantes
 
