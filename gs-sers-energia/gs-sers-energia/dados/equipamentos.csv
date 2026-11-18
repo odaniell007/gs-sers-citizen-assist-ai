@@ -1,0 +1,11 @@
+id,equipamento,quantidade,potencia_w,horas_dia,dias_mes,tipo_dado,origem
+chuveiro,Chuveiro elétrico,1,5500,0.6,30,estimado,"Potência típica de chuveiro (verificar etiqueta do aparelho); 0,6 h/dia = ~9 min por banho x 4 pessoas"
+geladeira,Geladeira antiga (frost free),1,70,24,30,estimado,"Potência média equivalente (já considera os ciclos do compressor); consultar tabela Procel/Inmetro"
+lampadas,Lâmpadas fluorescentes compactas,10,20,5,30,estimado,"10 pontos de luz x 20 W x 5 h/dia"
+tv,Televisão,1,120,5,30,estimado,"Potência típica de TV de 40-50 pol.; 5 h/dia"
+ventilador,Ventilador,2,60,6,30,estimado,"2 aparelhos x 60 W x 6 h/dia"
+maq_lavar,Máquina de lavar roupas,1,500,0.5,30,estimado,"Média diária (cerca de 3,5 ciclos/semana)"
+computador,Computador de mesa,1,150,4,30,estimado,"150 W x 4 h/dia"
+ferro,Ferro de passar,1,1000,0.15,30,estimado,"Cerca de 1 h por semana"
+microondas,Micro-ondas,1,1200,0.3,30,estimado,"Cerca de 18 min por dia"
+standby,"Aparelhos em espera (roteador, TV box, carregadores)",1,30,24,30,estimado,"Soma estimada da carga permanente"

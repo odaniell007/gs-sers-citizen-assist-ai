@@ -1,0 +1,82 @@
+{
+  "_aviso": "Todos os valores marcados como 'estimado' devem ser substituídos pelos dados reais do público atendido (fatura, etiquetas, orçamentos). Nada aqui é resultado garantido.",
+  "tarifa_kwh_com_tributos": {
+    "valor": 0.5535,
+    "unidade": "R$/kWh",
+    "tipo_dado": "fonte",
+    "origem": "Total da fatura do grupo (R$ 128,41) ÷ 232 kWh = R$ 0,5535/kWh, já com tributos. Se a conta tiver desconto ou outros itens, o valor por kWh pode diferir um pouco."
+  },
+  "pessoas_na_casa": {
+    "valor": 4,
+    "tipo_dado": "estimado",
+    "origem": "Premissa da casa-exemplo"
+  },
+  "tipo_ligacao": {
+    "valor": "monofasico",
+    "tipo_dado": "fonte",
+    "origem": "Fatura de luz do grupo"
+  },
+  "custo_disponibilidade_kwh": {
+    "monofasico": 30,
+    "bifasico": 50,
+    "trifasico": 100,
+    "tipo_dado": "fonte",
+    "origem": "Resolução Normativa ANEEL nº 1.000/2021 (mínimo faturável por tipo de ligação)"
+  },
+  "irradiacao_hsp": {
+    "valor": 4.5,
+    "unidade": "kWh/m2/dia",
+    "tipo_dado": "estimado",
+    "origem": "Ordem de grandeza para a cidade de São Paulo; conferir no CRESESB SunData"
+  },
+  "taxa_desempenho": {
+    "valor": 0.8,
+    "tipo_dado": "estimado",
+    "origem": "Perdas típicas de inversor, temperatura e sujeira"
+  },
+  "potencia_modulo_wp": {
+    "valor": 550,
+    "tipo_dado": "estimado",
+    "origem": "Módulo comercial típico"
+  },
+  "custo_fv_rs_por_wp": {
+    "valor": 2.84,
+    "tipo_dado": "fonte",
+    "origem": "Greener, Estudo Estratégico GD 2025 (sistema residencial de 4 kWp, R$ 11.360); média nacional de 1T2026 foi R$ 2,45/Wp (Solfácil), mas sistemas pequenos costumam ser mais caros por Wp"
+  },
+  "fator_compensacao": {
+    "valor": 0.9,
+    "tipo_dado": "estimado",
+    "origem": "Parte da energia injetada paga a parcela Fio B (60% em 2026, Lei 14.300/2022); 0,90 é uma aproximação que depende do perfil de uso"
+  },
+  "degradacao_fv_anual": {
+    "valor": 0.005,
+    "tipo_dado": "estimado",
+    "origem": "Perda típica de módulos"
+  },
+  "om_fv_rs_por_ano": {
+    "valor": 150,
+    "tipo_dado": "estimado",
+    "origem": "Limpeza e inspeção"
+  },
+  "reajuste_tarifa_anual": {
+    "valor": 0.05,
+    "tipo_dado": "estimado",
+    "origem": "Premissa; o reajuste real varia (ex.: 10,18% na Enel SP em 2026)"
+  },
+  "horizonte_anos": {
+    "valor": 10,
+    "origem": "Período de referência comum para todas as alternativas"
+  },
+  "fator_emissao_kg_co2_kwh": {
+    "valor": 0.0385,
+    "tipo_dado": "fonte",
+    "origem": "MCTI: fator médio do SIN em 2023 (38,5 kg CO2/MWh). Em 2025 os meses ficaram entre 21 e 29 kg/MWh; o valor varia a cada ano"
+  },
+  "consumo_real_kwh_mes": {
+    "valor": 232,
+    "unidade": "kWh/mês",
+    "tipo_dado": "fonte",
+    "origem": "Fatura de luz do grupo (kWh do mês). O ideal é usar a média de 12 meses."
+  }
+}

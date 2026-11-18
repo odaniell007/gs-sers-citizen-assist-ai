@@ -1,0 +1,5 @@
+id,descricao,equipamento_id,potencia_nova_w,horas_nova,investimento_rs,tipo,tipo_dado,observacao
+led,Trocar 10 lâmpadas fluorescentes por LED de 9 W,lampadas,9,5,120,troca,estimado,"R$ 12 por lâmpada (preço estimado; pesquisar no varejo)"
+banho,Reduzir o tempo de banho em cerca de 2 minutos por pessoa,chuveiro,5500,0.45,0,habito,estimado,"Mudança de hábito; sem custo"
+standby,Régua com interruptor para desligar aparelhos em espera,standby,15,24,60,troca,estimado,"Corta metade da carga em espera; R$ 60 estimado"
+geladeira,Trocar a geladeira antiga por uma com selo Procel A,geladeira,45,24,3000,troca,estimado,"Preço estimado; avaliada à parte porque o retorno só pela economia é longo"
