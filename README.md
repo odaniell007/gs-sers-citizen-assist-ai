@@ -13,7 +13,7 @@ Global Solution 2026.2 · Soluções em Energias Renováveis e Sustentáveis · 
 
 **Público:** famílias de baixa e média renda da cidade de São Paulo, em casa própria, que recebem a conta de luz e não sabem onde a energia está sendo gasta nem se vale a pena investir em energia solar.
 
-**Necessidade energética:** reduzir a conta de luz da casa. Os dados da casa-exemplo (4 pessoas, ~281 kWh/mês) estão em `dados/equipamentos.csv` e são **estimados**; o assistente aceita a tarifa e o consumo reais da fatura do usuário.
+**Necessidade energética:** reduzir a conta de luz da casa. O consumo (232 kWh/mês), a tarifa (R$ 0,5535/kWh, total da conta ÷ kWh) e a ligação (monofásica) vêm da fatura do grupo; a distribuição por aparelho (`dados/equipamentos.csv`) é **estimada** e ajustada para bater com o consumo da fatura. O assistente aceita os dados da fatura de qualquer usuário.
 
 **Como o assistente contribui:** responde, em linguagem simples, perguntas como "quanto eu consumo?", "como economizar?", "vale a pena energia solar?" e "compare as alternativas". Cada resposta vem de cálculos reais (`src/calculos.py`) e termina com **limitações** e **fontes**.
 
@@ -56,19 +56,19 @@ docs/roteiro_video.md        roteiro do vídeo de 3 minutos
 tests/test_calculos.py       testes automatizados
 ```
 
-## Resultado principal (casa-exemplo, 10 anos)
+## Resultado principal (conta de exemplo: 232 kWh/mês, R$ 128,41, 10 anos)
 
 | Alternativa | Investimento | Economia/mês | Retorno | Ganho líquido |
 |---|---|---|---|---|
-| A) Eficiência | R$ 180 | R$ 57 | 4 meses | R$ 8.462 |
-| B) Solar (2,2 kWp) | R$ 6.248 | R$ 229 | 2 anos e 4 meses | R$ 25.993 |
-| C) A + solar (1,65 kWp) | R$ 4.866 | R$ 234 | 1 ano e 10 meses | R$ 28.260 |
+| A) Eficiência | R$ 180 | R$ 24 | 8 meses | R$ 3.405 |
+| B) Solar (1,65 kWp) | R$ 4.686 | R$ 89 | 4 anos e 8 meses | R$ 6.889 |
+| C) A + solar (1,65 kWp) | R$ 4.866 | R$ 103 | 4 anos e 2 meses | R$ 8.891 |
 
 Detalhes e premissas em `docs/analise_comparacao.md` e `docs/justificativas.md`.
 
 ## Limitações
 
-- Os dados da casa-exemplo, o preço dos itens e a tarifa são **estimados** e marcados como tal. Os valores reais mudam com a fatura, a bandeira tarifária, o orçamento e as regras do Fio B.
+- A distribuição por aparelho e o preço dos itens são **estimados** e marcados como tal; consumo e tarifa vêm da fatura do grupo. Os valores reais mudam com a fatura, a bandeira tarifária, o orçamento e as regras do Fio B.
 - A economia e o retorno são estimativas, não resultados garantidos.
 - A solar depende de telhado com boa orientação; apartamentos e imóveis alugados podem não conseguir instalar.
 - O CO₂ evitado é pequeno porque a matriz elétrica brasileira já é majoritariamente renovável; as emissões da fabricação dos módulos não foram contabilizadas.
